@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:scaleX="-1"
+        android:scaleY="1"
+        android:src="@drawable/back_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/vera_tenebrae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/code_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backGround"
+        app:srcCompat="@drawable/veratenebrae_studio" />
+
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="125dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_code" />
+
+    <ImageView
+        android:id="@+id/reg_back_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/code_image"
+        app:layout_constraintStart_toStartOf="@+id/code_image"
+        app:layout_constraintTop_toTopOf="@+id/code_image"
+        app:srcCompat="@drawable/reg_back_field" />
+
+    <EditText
+        android:id="@+id/input_login"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите логин"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toTopOf="@+id/reg_back_field" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите почту"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_login" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="211dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="25dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Регистрация"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_back_field"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toTopOf="@+id/reg_back_field"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="25dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Вход"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_back_field"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toTopOf="@+id/reg_back_field"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageButton
+        android:id="@+id/reg_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="@+id/input_password"
+        app:layout_constraintTop_toBottomOf="@+id/input_password"
+        app:srcCompat="@drawable/reg_logbtn" />
+
+    <TextView
+        android:id="@+id/reg_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="5dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Регестрироваться"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_button"
+        app:layout_constraintEnd_toEndOf="@+id/reg_button"
+        app:layout_constraintStart_toStartOf="@+id/reg_button"
+        app:layout_constraintTop_toTopOf="@+id/reg_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/back_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/code_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="165dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backGround"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/login_code" />
+
+    <ImageView
+        android:id="@+id/login_field_view"
+        android:layout_width="0dp"
+        android:layout_height="360dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/code_image"
+        app:layout_constraintStart_toStartOf="@+id/code_image"
+        app:layout_constraintTop_toTopOf="@+id/code_image"
+        app:srcCompat="@drawable/log_inimputback" />
+
+    <EditText
+        android:id="@+id/input_login"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите логин или почту"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/login_field_view"
+        app:layout_constraintStart_toStartOf="@+id/login_field_view"
+        app:layout_constraintTop_toTopOf="@+id/login_field_view" />
+
+    <ImageButton
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/login_field_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_field_view"
+        app:layout_constraintTop_toBottomOf="@+id/input_password"
+        app:srcCompat="@drawable/reg_logbtn" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите пароль"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/login_field_view"
+        app:layout_constraintStart_toStartOf="@+id/login_field_view"
+        app:layout_constraintTop_toBottomOf="@+id/input_login" />
+
+    <ImageView
+        android:id="@+id/vera_tenebrae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/code_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/backGround"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/veratenebrae_studio" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Войти"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/login_button"
+        app:layout_constraintEnd_toEndOf="@+id/login_button"
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toTopOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="11dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Регистрация"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/login_field_view"
+        app:layout_constraintEnd_toEndOf="@+id/login_field_view"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/login_field_view"
+        app:layout_constraintTop_toTopOf="@+id/login_field_view"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/vhod"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="35dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Вход"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/login_field_view"
+        app:layout_constraintEnd_toEndOf="@+id/login_field_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_field_view"
+        app:layout_constraintTop_toTopOf="@+id/login_field_view"
+        app:layout_constraintVertical_bias="0.095" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

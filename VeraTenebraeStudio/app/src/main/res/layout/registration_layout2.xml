@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registartion_2_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_ground2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:scaleX="-1"
+        android:scaleY="1"
+        android:src="@drawable/back_reg_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/reg_back_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/back_ground2"
+        app:layout_constraintEnd_toEndOf="@+id/back_ground2"
+        app:layout_constraintStart_toStartOf="@+id/back_ground2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reg_back_field_2" />
+
+    <ImageView
+        android:id="@+id/vera_tenebrae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/reg_back_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_ground2"
+        app:srcCompat="@drawable/veratenebrae_studio" />
+
+    <EditText
+        android:id="@+id/input_firstname"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите имя"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toTopOf="@+id/reg_back_field" />
+
+    <EditText
+        android:id="@+id/input_lastname"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите фамилию"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/input_firstname"
+        app:layout_constraintStart_toStartOf="@+id/input_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/input_firstname" />
+
+    <EditText
+        android:id="@+id/input_middlename"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg"
+        android:ems="10"
+        android:hint="Введите отчество"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#89767676"
+        app:layout_constraintEnd_toEndOf="@+id/input_lastname"
+        app:layout_constraintStart_toStartOf="@+id/input_lastname"
+        app:layout_constraintTop_toBottomOf="@+id/input_lastname" />
+
+    <ImageView
+        android:id="@+id/image_choose_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_back_field"
+        app:layout_constraintEnd_toEndOf="@+id/reg_back_field"
+        app:layout_constraintStart_toStartOf="@+id/reg_back_field"
+        app:layout_constraintTop_toTopOf="@+id/reg_back_field"
+        app:layout_constraintVertical_bias="0.73"
+        app:srcCompat="@drawable/image_choose_btn" />
+
+    <ImageButton
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-354dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/reg_back_field"
+        app:layout_constraintTop_toBottomOf="@+id/image_choose_button"
+        app:srcCompat="@drawable/reg_logbtn" />
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="120dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="true"
+        android:fontFamily="@font/jsmath_cmbx10"
+        android:gravity="center"
+        android:text="Войти"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/registerButton"
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toTopOf="@+id/registerButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
